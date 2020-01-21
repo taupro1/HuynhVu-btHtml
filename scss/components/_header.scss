@@ -1,0 +1,50 @@
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  .header {
+    background-color: $color-blue;
+    height: 50px;
+    .content {
+      height: 100%;
+      .content-2 {
+        .header-item:first-child {
+          border-left: 1px solid #ffffff4d;
+          border-right: 1px solid #ffffff4d;
+        }
+        .header-item:last-child {
+          border-right: 1px solid #ffffff4d;
+        }
+      }
+      .header-content {
+        height: 100%;
+        .header-item {
+          @include flex();
+          .overplay {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background: white;
+            transform: translateY(-50px);
+            transition: all 0.3s;
+          }
+          &:hover {
+            cursor: pointer;
+            .overplay {
+              transform: translateY(0px);
+              transition: all 0.3s;
+            }
+            a {
+              color: #00446b;
+              transition: all 0.3s;
+              z-index: 10;
+            }
+          }
+        }
+        .header-item:nth-child(3) {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

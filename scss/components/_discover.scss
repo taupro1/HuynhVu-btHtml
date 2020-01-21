@@ -1,0 +1,95 @@
+#discover {
+  margin-top: 4rem;
+  .heading-discover {
+    text-align: center;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    div {
+      font-size: 13px;
+      margin-bottom: 2rem;
+      letter-spacing: 1px;
+    }
+  }
+  .discover-content {
+    img {
+      height: auto;
+    }
+    .discover-item {
+      text-align: center;
+      background-color: #fff;
+      padding: 1.5rem;
+      letter-spacing: 1px;
+      line-height: 21px;
+      h6 {
+        margin-bottom: 2.5rem;
+        color: $color-black;
+      }
+      p {
+        color: $color-black;
+        margin-bottom: 3rem;
+      }
+      #item-1 {
+        margin-bottom: 4.1rem !important;
+      }
+      #item-2 {
+        margin-bottom: 4.2rem !important;
+      }
+      .button-discover {
+        @include button-div(#007cc0, 4.6rem);
+        button {
+          @include button(#007cc0, none);
+          a {
+            @include a(white);
+          }
+        }
+        &:hover {
+          @include button-div(#007cc0, 4.6rem);
+          button {
+            @include button(white, none);
+            padding: 5px 30px !important;
+            a {
+              @include a(#007cc0);
+              transition: all 0.1s;
+            }
+            transition: all 0.1s;
+          }
+          transition: all 0.1s;
+        }
+      }
+    }
+  }
+  .discover-1 {
+    margin-bottom: 2rem;
+  }
+  .discover-2 {
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  .discover-3 {
+    justify-content: center;
+    margin-bottom: 5rem;
+    div {
+      @include button-div(#e42525, 4.6rem);
+      button {
+        @include button(#e42525, none);
+        a {
+          @include a(white);
+        }
+      }
+      &:hover {
+        @include button-div(#e42525, 4.6rem);
+        button {
+          @include button(white, none);
+          a {
+            @include a(#e42525);
+            transition: all 0.1s;
+          }
+          transition: all 0.1s;
+        }
+        transition: all 0.1s;
+      }
+    }
+  }
+}

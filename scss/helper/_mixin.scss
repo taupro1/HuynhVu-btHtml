@@ -1,0 +1,28 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+@mixin button($color, $border) {
+  background-color: $color;
+  border: $border;
+  border-radius: 18px;
+  padding: 5px 17px;
+}
+
+@mixin a($color-a) {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: $color-a;
+}
+
+@mixin button-div($color-div,$margin-lr) {
+  margin: 0 $margin-lr;
+  background-color: $color-div;
+  padding: 2px;
+  border-radius: 18px;
+}

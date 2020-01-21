@@ -1,0 +1,63 @@
+#product {
+  margin-top: 5rem;
+  .product-item {
+    position: absolute;
+    text-align: center;
+    bottom: 8%;
+    width: 95%;
+    padding: 0 20px;
+  }
+  img {
+    height: 22rem;
+  }
+  .button-product {
+    @include button-div(#2198dc, 10.6rem);
+    button {
+      @include button(#2198dc, none);
+      a {
+        @include a(white);
+      }
+    }
+  }
+  .button-product-2{
+    @include button-div(#2198dc, 13.6rem);
+    button {
+      @include button(#2198dc, none);
+      a {
+        @include a(white);
+      }
+    }
+  }
+  .product-content{
+      &:hover{
+          cursor: pointer;
+          .button-product {
+            @include button-div(#2198dc, 10.6rem);
+            button {
+              @include button(white, none);
+              padding: 5px 22px !important;
+              a {
+                @include a(#2198dc);
+                transition: all 0.1s;
+              }
+              transition: all 0.1s;
+            }
+            transition: all 0.1s;
+          }
+          .button-product-2 {
+            @include button-div(#2198dc, 13.6rem);
+            button {
+              @include button(white, none);
+              padding: 5px 21px !important;
+              a {
+                @include a(#2198dc);
+                transition: all 0.1s;
+              }
+              transition: all 0.1s;
+            }
+            transition: all 0.1s;
+          }
+
+      }
+  }
+}

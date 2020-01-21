@@ -1,0 +1,49 @@
+#support {
+  .support {
+    padding-right: 25px;
+    padding-left: 25px;
+    .support-content {
+      text-align: center;
+      background-color: #fff;
+      padding: 0 24px;
+      padding-bottom: 2rem;
+      img {
+        height: 25%;
+        width: 35%;
+        margin-top: 20px;
+        margin-bottom: 33px;
+      }
+      h6,
+      p {
+        color: black;
+        margin-bottom: 21px;
+        letter-spacing: 1px;
+      }
+      .button-support {
+        @include button-div(#2198dc, 4.6rem);
+        button {
+          @include button(#2198dc, none);
+          a {
+            @include a(white);
+          }
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        .button-support {
+          @include button-div(#2198dc, 4.6rem);
+          button {
+            @include button(white, none);
+            padding: 5px 2.5rem !important;
+            a {
+              @include a(#2198dc);
+              transition: all 0.1s;
+            }
+            transition: all 0.1s;
+          }
+          transition: all 0.1s;
+        }
+      }
+    }
+  }
+}

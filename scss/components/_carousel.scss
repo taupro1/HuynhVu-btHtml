@@ -1,0 +1,116 @@
+#carousel {
+  height: 64rem;
+  .carousel-1 {
+    background: #00324f;
+    .carousel_slide {
+      margin-bottom: 15rem;
+    }
+    img {
+      position: relative;
+    }
+    .button-carousel {
+      bottom: 25%;
+    }
+    .next-prev {
+      top: 33%;
+    }
+    .carousel-content {
+      position: absolute;
+      top: 0;
+      @include flex();
+      .carousel_item {
+        text-align: center;
+        position: absolute;
+        bottom: 7%;
+        .button_item {
+          @include button-div(#e42525, 12rem);
+          button {
+            @include button(#e42525, none);
+            a {
+              @include a(white);
+            }
+          }
+          &:hover {
+            @include button-div(#e42525, 12rem);
+            cursor: pointer;
+            button {
+              @include button(white, none);
+              a {
+                @include a(#e42525);
+                transition: all 0.5s;
+              }
+              transition: all 0.5s;
+            }
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+  }
+  .carousel-2 {
+    margin-top: -10rem;
+    img {
+      position: relative;
+      height: 150%;
+    }
+    .img-item {
+      position: absolute;
+      bottom: -36%;
+      text-align: center;
+      margin: 0px 28px;
+      .button-img {
+        @include button-div(#2198dc, 11.6rem);
+        button {
+          @include button(#2198dc, none);
+          a {
+            @include a(white);
+          }
+        }
+        &:hover {
+          cursor: pointer;
+          @include button-div(#2198dc, 11.6rem);
+          cursor: pointer;
+          button {
+            @include button(white, none);
+            a {
+              @include a(#2198dc);
+              transition: all 0.5s;
+            }
+            transition: all 0.5s;
+          }
+          transition: all 0.5s;
+        }
+      }
+    }
+    .img-item-2 {
+      position: absolute;
+      top: 45%;
+      width: 43%;
+      text-align: center;
+      margin-left: 10px;
+      .button-img {
+        @include button-div(white, 59px);
+        button {
+          @include button(#2198dc, none);
+          a {
+            @include a(white);
+          }
+        }
+        &:hover {
+          cursor: pointer;
+          @include button-div(#2198dc, 59px);
+          cursor: pointer;
+          button {
+            @include button(white, none);
+            a {
+              @include a(#2198dc);
+              transition: all 0.5s;
+            }
+            transition: all 0.5s;
+          }
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+}
