@@ -452,8 +452,21 @@ header {
             color: #e42525;
             transition: all 0.1s; }
 
-footer img {
-  height: 100%;
-  width: 100%; }
+footer .footer-content .overplay {
+  height: 5rem;
+  width: 100%;
+  background-color: #ececec; }
+footer .footer-content .footer-item .logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #ececec;
+  margin: 0; }
+  footer .footer-content .footer-item .logo img {
+    width: 20%; }
+  footer .footer-content .footer-item .logo:before {
+    content: "";
+    border: 3px solid #007CC0;
+    width: 90%; }
 
 /*# sourceMappingURL=style.css.map */

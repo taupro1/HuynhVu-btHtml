@@ -1,6 +1,26 @@
-footer{
-    img{
-        height: 100%;
-        width: 100%;
+footer {
+  .footer-content {
+    .overplay {
+      height: 5rem;
+      width: 100%;
+      background-color: #ececec;
     }
+    .footer-item {
+      .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #ececec;
+        margin: 0;
+        img {
+          width: 20%;
+        }
+        &:before{
+            content:"";
+            border: 3px solid $color-blue;
+            width: 90%;
+        }
+      }
+    }
+  }
 }
