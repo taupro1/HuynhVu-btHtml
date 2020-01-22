@@ -1,9 +1,9 @@
 footer {
+  background-color: #ececec;
   .footer-content {
     .overplay {
       height: 5rem;
       width: 100%;
-      background-color: #ececec;
     }
     .footer-item {
       .logo {
@@ -15,10 +15,97 @@ footer {
         img {
           width: 20%;
         }
-        &:before{
-            content:"";
-            border: 3px solid $color-blue;
-            width: 90%;
+        &:before {
+          content: "";
+          border: 2px solid $color-blue;
+          width: 95%;
+        }
+        &:after {
+          content: "";
+          border: 1px solid #00000026;
+          width: 95%;
+        }
+      }
+      .contact {
+        padding: 20px 0;
+        width: 95%;
+        margin: 0 auto;
+        .contact-icon {
+          padding: 0;
+          div:first-child {
+            font-size: 13px;
+            margin-bottom: 10px;
+            font-weight: 600;
+          }
+          i {
+            cursor: pointer;
+            height: 27px;
+            width: 27px;
+            text-align: center;
+            line-height: 27px;
+            background-color: #2198dc;
+            color: white;
+            border-radius: 50%;
+            margin: 0 3px;
+          }
+        }
+        .contact-search {
+          display: flex;
+          align-items: center;
+          .search {
+            width: 100%;
+            background-color: white;
+            padding: 8px 17px;
+            border-radius: 21px;
+            i {
+              color: $color-blue;
+            }
+            input {
+              width: 90%;
+              border: none;
+              outline: none;
+              &::placeholder {
+                color: $color-blue;
+              }
+            }
+          }
+        }
+        .contact-information {
+          padding-right: 0;
+          padding-left: 8%;
+          text-align: right;
+          div:first-child {
+            font-size: 12px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+          .button-footer {
+            @include button-div($color-blue, 0);
+            margin-left: 40%;
+            button {
+              @include button(white, none);
+              padding: 2% 18% !important;
+              a {
+                @include a($color-blue);
+              }
+            }
+            &:hover {
+              @include button-div($color-blue, 0);
+              cursor: pointer;
+              margin-left: 40%;
+              button {
+                @include button($color-blue, none);
+                padding: 2% 18% !important;
+                a {
+                  @include a(white);
+                  transition: all 0.5s;
+                }
+                transition: all 0.5s;
+              }
+              transition: all 0.5s;
+            }
+          }
         }
       }
     }

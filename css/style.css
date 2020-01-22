@@ -452,21 +452,109 @@ header {
             color: #e42525;
             transition: all 0.1s; }
 
-footer .footer-content .overplay {
-  height: 5rem;
-  width: 100%;
+footer {
   background-color: #ececec; }
-footer .footer-content .footer-item .logo {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: #ececec;
-  margin: 0; }
-  footer .footer-content .footer-item .logo img {
-    width: 20%; }
-  footer .footer-content .footer-item .logo:before {
-    content: "";
-    border: 3px solid #007CC0;
-    width: 90%; }
+  footer .footer-content .overplay {
+    height: 5rem;
+    width: 100%; }
+  footer .footer-content .footer-item .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ececec;
+    margin: 0; }
+    footer .footer-content .footer-item .logo img {
+      width: 20%; }
+    footer .footer-content .footer-item .logo:before {
+      content: "";
+      border: 2px solid #007CC0;
+      width: 95%; }
+    footer .footer-content .footer-item .logo:after {
+      content: "";
+      border: 1px solid #00000026;
+      width: 95%; }
+  footer .footer-content .footer-item .contact {
+    padding: 20px 0;
+    width: 95%;
+    margin: 0 auto; }
+    footer .footer-content .footer-item .contact .contact-icon {
+      padding: 0; }
+      footer .footer-content .footer-item .contact .contact-icon div:first-child {
+        font-size: 13px;
+        margin-bottom: 10px;
+        font-weight: 600; }
+      footer .footer-content .footer-item .contact .contact-icon i {
+        cursor: pointer;
+        height: 27px;
+        width: 27px;
+        text-align: center;
+        line-height: 27px;
+        background-color: #2198dc;
+        color: white;
+        border-radius: 50%;
+        margin: 0 3px; }
+    footer .footer-content .footer-item .contact .contact-search {
+      display: flex;
+      align-items: center; }
+      footer .footer-content .footer-item .contact .contact-search .search {
+        width: 100%;
+        background-color: white;
+        padding: 8px 17px;
+        border-radius: 21px; }
+        footer .footer-content .footer-item .contact .contact-search .search i {
+          color: #007CC0; }
+        footer .footer-content .footer-item .contact .contact-search .search input {
+          width: 90%;
+          border: none;
+          outline: none; }
+          footer .footer-content .footer-item .contact .contact-search .search input::placeholder {
+            color: #007CC0; }
+    footer .footer-content .footer-item .contact .contact-information {
+      padding-right: 0;
+      padding-left: 8%;
+      text-align: right; }
+      footer .footer-content .footer-item .contact .contact-information div:first-child {
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-bottom: 10px; }
+      footer .footer-content .footer-item .contact .contact-information .button-footer {
+        margin: 0 0;
+        background-color: #007CC0;
+        padding: 2px;
+        border-radius: 18px;
+        margin-left: 40%; }
+        footer .footer-content .footer-item .contact .contact-information .button-footer button {
+          background-color: white;
+          border: none;
+          border-radius: 18px;
+          padding: 5px 17px;
+          padding: 2% 18% !important; }
+          footer .footer-content .footer-item .contact .contact-information .button-footer button a {
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #007CC0; }
+        footer .footer-content .footer-item .contact .contact-information .button-footer:hover {
+          margin: 0 0;
+          background-color: #007CC0;
+          padding: 2px;
+          border-radius: 18px;
+          cursor: pointer;
+          margin-left: 40%;
+          transition: all 0.5s; }
+          footer .footer-content .footer-item .contact .contact-information .button-footer:hover button {
+            background-color: #007CC0;
+            border: none;
+            border-radius: 18px;
+            padding: 5px 17px;
+            padding: 2% 18% !important;
+            transition: all 0.5s; }
+            footer .footer-content .footer-item .contact .contact-information .button-footer:hover button a {
+              font-size: 13px;
+              font-weight: 800;
+              letter-spacing: 1px;
+              color: white;
+              transition: all 0.5s; }
 
 /*# sourceMappingURL=style.css.map */
